@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f6f2;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+header img {
+    width: 320px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto 35px;
+}
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+   color: #B19256;
+    margin-bottom: 30px;
+
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 25px 0;
+}
+
+section {
+    background-color: #FDFBFA;
+    margin-bottom: 30px;
+    padding: 55px 45px;
+    border-radius: 0;
+}
+
+h2 {
+    margin-bottom: 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #1f1f1f;
+}
+
+section p {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555555;
+    max-width: 760px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #c9a24d;
+    text-align: center;
+    padding: 28px 25px;
+    margin-top: 0;
+    border-top: 1px solid #c9a24d;
+}
+
+footer p {
+    margin: 0;
+    color: #f5f1e8;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: #fffdf9;
+    padding: 26px 30px;
+    border: 1px solid #e8e1d6;
+    border-top: 2px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #1f1f1f;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* QUOTE FORM */
+
+#quote {
+    background-color: #fffdf9;
+    padding: 55px 45px 30px;
+}
+
+#quote h2 {
+    color: #1f1f1f;
+}
+
+#quote > p {
+    color: #666666;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.quote-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid #e8e1d6;
+    background-color: white;
+    color: #1f1f1f;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.quote-form textarea {
+    grid-column: 1 / -1;
+    resize: vertical;
+}
+
+.quote-form button {
+    grid-column: 1 / -1;
+    width: 280px;
+justify-self: center;
+    background-color: #b19256;
+    color: #1f1f1f;
+    border: none;
+    padding: 17px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* CONTACT SECTION */
+
+#contact {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 60px 45px;
+}
+
+#contact h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-intro {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #d8d8d8;
+    margin-bottom: 35px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #d4af37;
+}
+
+.contact-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #f1f1f1;
+}
+
+.contact-info strong {
+    color: #d4af37;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#contact {
+    margin-bottom: 0;
+}
+
+#contact + footer {
+    margin-top: 0;
+}
+/* SPACING ADJUSTMENT */
+
+main > section:first-child {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+#services {
+    padding-top: 25px;
+}
+#services {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+
+#quote {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.quote-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+/* THANK YOU PAGE */
+
+.thank-you {
+    min-height: 100vh;
+    background: #1f1f1f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.thank-you img {
+    width: 280px;
+    max-width: 80%;
+    margin-bottom: 35px;
+}
+
+.thank-you h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #B19256;
+}
+
+.thank-you p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    max-width: 600px;
+}
+
+.thank-you-message {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    background: #5f5138;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.back-home:hover {
+    background: #ffffff;
+}
+
+/* LUXURY TAGLINE + ELEGANT GOLD */
+
+.luxury-tagline {
+    color: #b19256;
+    font-size: 14px !important;
+    font-style: normal !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: -15px !important;
+    margin-bottom: 45px !important;
+}
+
+.thank-you h1 {
+    color: #b19256;
+}
+
+.hourglass-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 10px auto 35px;
+}
+
+.hourglass-divider span {
+    width: 90px;
+    height: 1px;
+    background: #B19256;
+}
+
+.hourglass-divider img {
+    width: 28px;
+    height: auto;
+    opacity: 0.85;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.intro-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #B19256;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.intro-section h2 {
+    font-family: "Cinzel", serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    margin-bottom: 22px;
+}
+
+
+.intro-text {
+    max-width: 760px;
+    margin: 0 auto 22px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+.intro-signature {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #8F7445;
+    margin-top: 10px;
+}
+
+.intro-section {
+    position: relative;
+    overflow: hidden;
+    background-color: #FDFBFA;
+   
+}
+
+.intro-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(253, 251, 250, 0.96);
+    pointer-events: none;
+}
+
+.intro-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.intro-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.intro-signature {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none !important;
+    color: #8F7445;
+}
+
+
+
+.intro-signature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.signature-hourglass {
+    width: 14px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#services > h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #1f1f1f;
+    margin-bottom: 32px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* Header / menu */
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Quote form */
+    .quote-form {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-form textarea,
+    .quote-form button {
+        grid-column: 1;
+    }
+
+    /* Contact */
+    .contact-info {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* Better spacing on small screens */
+    #services,
+    #quote,
+    #contact {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+/* =========================================
+   FINAL MOBILE POLISH
+   Precious Cleaning Services
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+    header {
+        padding: 45px 22px 40px;
+    }
+
+    header .logo {
+        max-width: 540px;
+        width: 92%;
+        height: auto;
+        margin: 0 auto 25px;
+    }
+
+    header .tagline {
+        margin: 18px 0 30px;
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    header nav {
+        gap: 20px;
+    }
+
+    header nav a {
+        font-size: 17px;
+        letter-spacing: 1.5px;
+    }
+
+
+    /* MAIN CONTENT */
+    main {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    /* INTRO / HERO */
+    .intro {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .intro h1 {
+        font-size: 42px;
+        line-height: 1.15;
+    }
+
+    .intro p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* SERVICES */
+    #services {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    #services h2 {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .service-card {
+        padding: 35px 28px;
+    }
+
+    .service-card h3 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .service-card p {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+
+    /* QUOTE */
+    #quote {
+        padding: 50px 24px;
+    }
+
+    #quote h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    #quote > p {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .quote-form {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .quote-form input,
+    .quote-form select,
+    .quote-form textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .quote-form textarea {
+        min-height: 160px;
+    }
+
+    .quote-form button {
+        width: 100%;
+        max-width: 460px;
+        margin: 10px auto 0;
+        padding: 19px 20px;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+
+    /* CONTACT */
+    #contact {
+        margin: 0;
+        padding: 50px 30px;
+    }
+
+    #contact h2 {
+        font-size: 39px;
+    }
+
+    .contact-intro {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-info p {
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 25px 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================
+   FINAL MOBILE POLISH
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  /* Cabeçalho mais compacto */
+  header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  header .logo {
+    margin-bottom: 28px;
+  }
+
+  /* Menu */
+  nav {
+    gap: 22px;
+  }
+
+  /* Espaço entre cabeçalho e apresentação */
+  .intro {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  /* Títulos principais */
+  .intro h1 {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  #services h2,
+  #quote h2 {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  /* Cards de serviços */
+  .service-card {
+    padding: 32px 28px;
+  }
+
+  .service-card h3 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .service-card p {
+    line-height: 1.6;
+  }
+}
